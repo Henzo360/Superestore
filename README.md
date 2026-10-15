@@ -1,45 +1,44 @@
-# Superstore Data Analysis
+# Superstore Data Cleaning
 
 ## Project overview
-This project documents data preprocessing and exploratory data analysis (EDA) on a Superstore dataset using a Jupyter notebook. The work is focused on preparing tabular data for analysis and exploring the dataset to understand its contents and patterns.
 
-EDA helps an analyst inspect distributions, identify potential data-quality issues, and understand relationships in a dataset before drawing conclusions or conducting further analysis.
-
-## Project objectives
-- Load and inspect the Superstore dataset.
-- Prepare the data for analysis through preprocessing.
-- Explore the dataset using descriptive analysis and visualisation where implemented in the notebook.
-- Document the workflow so that the analysis can be reviewed and reproduced.
+This project uses Python and pandas to profile the Sample Superstore dataset, inspect missing values, identify exact duplicate rows, remove duplicates, and export a cleaned CSV for further analysis. The repository also includes notebook markdown references to Power BI dashboard screenshots from the original project.
 
 ## Tools
-- **Python** — analysis environment
-- **pandas** — data manipulation and preprocessing
-- **NumPy** — numerical operations
-- **Matplotlib and Seaborn** — commonly used visualisation libraries for the notebook workflow
-- **Jupyter Notebook** — interactive analysis environment
 
-## Workflow overview
-The repository's notebook is described as covering preprocessing and exploratory analysis. The exact transformations, selected columns, and findings should be read directly from the notebook; this README does not attribute specific sales or profit conclusions that have not been independently verified from its outputs.
-
-A typical EDA workflow includes inspecting rows and columns, reviewing data types, checking missing values and duplicates, preparing fields for analysis, calculating descriptive summaries, and visualising relevant distributions. Refer to the notebook itself for the operations actually performed in this project.
+- Python
+- pandas
+- Jupyter Notebook
+- Power BI (dashboard work referenced in the notebook)
 
 ## Repository contents
-- `SampleStore .ipynb` — Jupyter notebook for Superstore data preprocessing and EDA.
-- `.gitignore` — Git ignore configuration.
 
-## Running the project
-1. Clone or download the repository.
-2. Install the common analysis dependencies:
+- `SampleStore .ipynb` — data inspection, missing-value checks, duplicate handling, and CSV export.
+- `requirements.txt` — Python dependencies.
+- `data/` — expected location for the source CSV, which is not included in this repository.
+- `output/` — generated cleaned CSV, created when the notebook runs.
 
-   ```bash
-   pip install pandas numpy matplotlib seaborn jupyter
-   ```
+## Workflow
 
-3. Open the notebook in Jupyter.
-4. Update the dataset path in the data-loading cell to match the location of your local data file.
-5. Run the notebook cells in order.
+1. Load the source CSV from a project-relative path.
+2. Inspect sample rows, dimensions, data types, and non-null counts.
+3. Report missing values by column.
+4. Count and display exact duplicate rows.
+5. Remove exact duplicates and report the before/after row counts.
+6. Export the cleaned dataset to `output/sample_superstore_cleaned.csv`.
 
-The dataset is not currently listed among the repository files, so provide the source data locally before running the notebook.
+## How to run
+
+1. Install dependencies with `python -m pip install -r requirements.txt`.
+2. Create a `data` folder beside the notebook and place the source file there as `SampleSuperstore.csv`.
+3. Open `SampleStore .ipynb` in Jupyter and run cells from top to bottom.
+
+## Data-quality notes
+
+- Exact duplicate removal does not guarantee that every record is correct or that all missing values should be removed.
+- Missing values are reported but are not automatically imputed or dropped.
+- The source dataset is not included in this repository, so the full workflow requires a separately obtained copy.
 
 ## Author
+
 Henry Odionye
