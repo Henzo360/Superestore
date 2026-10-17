@@ -15,7 +15,7 @@ This project uses Python and pandas to profile the Sample Superstore dataset, in
 
 - `SampleStore .ipynb` — data inspection, missing-value checks, duplicate handling, and CSV export.
 - `requirements.txt` — Python dependencies.
-- `data/` — expected location for the source CSV, which is not included in this repository.
+- `SampleSuperstore.csv` — source dataset included at the repository root; the notebook also supports `data/SampleSuperstore.csv`.
 - `output/` — generated cleaned CSV, created when the notebook runs.
 
 ## Workflow
@@ -30,7 +30,7 @@ This project uses Python and pandas to profile the Sample Superstore dataset, in
 ## How to run
 
 1. Install dependencies with `python -m pip install -r requirements.txt`.
-2. Create a `data` folder beside the notebook and place the source file there as `SampleSuperstore.csv`.
+2. Keep `SampleSuperstore.csv` in the repository root, or place it in `data/SampleSuperstore.csv`.
 3. Open `SampleStore .ipynb` in Jupyter and run cells from top to bottom.
 
 ## Data-quality notes
