@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This project uses Python and pandas to profile the Sample Superstore dataset, inspect missing values, identify exact duplicate rows, remove duplicates, and export a cleaned CSV for further analysis. The repository also includes notebook markdown references to Power BI dashboard screenshots from the original project.
+This project uses Python and pandas to profile the Sample Superstore dataset, inspect missing values, identify exact duplicate rows, remove duplicates, and export a cleaned CSV for further analysis. The repository also includes a Power BI file used for visualization and analysis.
 
 ## Tools
 
@@ -17,6 +17,7 @@ This project uses Python and pandas to profile the Sample Superstore dataset, in
 - `requirements.txt` — Python dependencies.
 - `SampleSuperstore.csv` — source dataset included at the repository root; the notebook also supports `data/SampleSuperstore.csv`.
 - `output/` — generated cleaned CSV, created when the notebook runs.
+- `sample Superstore.pbip` - Power BI file for visualization and analysis
 
 ## Workflow
 
