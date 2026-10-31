@@ -9,7 +9,7 @@ This project uses Python and pandas to profile the Sample Superstore dataset, in
 - Python
 - pandas
 - Jupyter Notebook
-- Power BI (dashboard work referenced in the notebook)
+- Power BI 
 
 ## Repository contents
 
